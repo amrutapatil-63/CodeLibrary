@@ -70,8 +70,6 @@ void dijkstra(int graph[V][V], int src)
 	// print the constructed distance array
 	printSolution(dist);
 }
-
-// driver program to test above function
 int main()
 {
 
@@ -90,5 +88,3 @@ int main()
 
 	return 0;
 }
-
-// This code is contributed by shivanisinghss2110
