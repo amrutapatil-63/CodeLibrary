@@ -1,5 +1,4 @@
-/* C++ program for solution of Hamiltonian
-Cycle problem using backtracking */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -8,10 +7,7 @@ using namespace std;
 
 void printSolution(int path[]);
 
-/* A utility function to check if
-the vertex v can be added at index 'pos'
-in the Hamiltonian Cycle constructed
-so far (stored in 'path[]') */
+
 bool isSafe(int v, bool graph[V][V],
 			int path[], int pos)
 {
@@ -47,9 +43,7 @@ bool hamCycleUtil(bool graph[V][V],
 			return false;
 	}
 
-	// Try different vertices as a next candidate
-	// in Hamiltonian Cycle. We don't try for 0 as
-	// we included 0 as starting point in hamCycle()
+
 	for (int v = 1; v < V; v++)
 	{
 		/* Check if this vertex can be added
@@ -74,13 +68,7 @@ bool hamCycleUtil(bool graph[V][V],
 	return false;
 }
 
-/* This function solves the Hamiltonian Cycle problem
-using Backtracking. It mainly uses hamCycleUtil() to
-solve the problem. It returns false if there is no
-Hamiltonian Cycle possible, otherwise return true
-and prints the path. Please note that there may be
-more than one solutions, this function prints one
-of the feasible solutions. */
+
 bool hamCycle(bool graph[V][V])
 {
 	int *path = new int[V];
@@ -150,5 +138,3 @@ int main()
 
 	return 0;
 }
-
-// This is code is contributed by rathbhupendra
